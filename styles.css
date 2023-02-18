@@ -1,0 +1,83 @@
+
+body{
+    background: #111111;
+    font-family: 'Inter', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    display: grid;
+    height:100vh;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 1.2fr 1fr 1fr;
+    grid-gap:0.2rem;
+    grid-template-areas: "box box box box" 
+    "box1 box4 box4 box4" "box2 box4 box4 box4"
+    "box3 box4 box4 box4";
+
+}
+
+@media (max-width: 640px) {
+    .container {
+      grid-template-columns: auto;
+    }
+  }
+
+
+#box{
+    
+    color: rgb(245, 245, 245);
+   border: 2px solid grey;
+   border-radius: 20px;
+   grid-area: box;
+}
+#box1{
+    color: rgb(245, 245, 245);
+    border: 2px solid grey;
+    grid-area: box1;
+}
+#box2{
+    color: rgb(245, 245, 245);
+    border: 2px solid grey;
+    grid-area: box2;
+}
+
+#box3{
+    color: rgb(245, 245, 245);
+    border: 2px solid grey;
+    grid-area: box3;
+ 
+}
+#box4{
+    color: rgb(245, 245, 245);
+    border: 2px solid grey; 
+    grid-area: box4;
+}
+
+
+#img{
+    
+    border-radius: 50%;
+        display: block;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+}
+.name{
+    padding-left:40%;
+}
+.ul{
+    padding: 40px;
+      
+}
+
+table{
+    height:80% ;
+        width: 100%;
+}
+
+table, td,th {
+    border: 2px solid grey;
+  }
